@@ -1,58 +1,13 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-
-body, * {
-    font-family: 'Roboto', sans-serif;
-    margin: 0;
-    padding: 0;
-}
-
-h1 {
-    margin: 1rem;
-}
-
-.cards {
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-}
-
-.card {
-    flex-basis: 31%;
-    margin: 1rem 0.4rem;
-    padding: 1rem 0.4rem 2.5rem 0.4rem;
-    border: solid 1px lightgrey;
-    border-radius: 15px;
-    box-shadow: 3px 2px 6px lightgrey;
-}
-
-.card__email {
-    font-size: 1rem;
-}
-
-.form-wrapper {
-    font-size: 18px;
-    max-width: 768px;
-    margin: 2rem auto;
-    padding: 2rem;
-    border: solid 1px lightgrey;
-    border-radius: 15px;
-    box-shadow: 3px 2px 6px lightgrey;
-}
-
-label, input {
-    margin-top: 5px;
-    display: block;
-    font-size: inherit;
-}
-
-input[type="text"] {
-    padding: .25rem;
-}
-
-input[type="submit"] {
-    background-color: lightgrey;
-    border: none;
-    padding: .375rem 1rem;
-    margin-top: 10px;
-}
+body { font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif; margin: 2rem; }
+header { display:flex; justify-content:space-between; align-items:center; margin-bottom:1rem; }
+a { text-decoration:none; }
+.btn { display:inline-block; padding:.5rem .75rem; border:1px solid #ddd; border-radius:8px; }
+.table { border-collapse: collapse; width: 100%; }
+.table th, .table td { border: 1px solid #e5e7eb; padding: .5rem .75rem; text-align:left; }
+.table th { background:#f9fafb; }
+.notice { background:#f1f5f9; padding:.5rem .75rem; border-radius:8px; margin:.75rem 0; }
+.error { background:#fee2e2; }
+form { max-width: 560px; display:grid; gap:.75rem; }
+label { font-weight:600; }
+input[type="text"], textarea { width:100%; padding:.5rem .6rem; border:1px solid #d1d5db; border-radius:6px; }
+button { padding:.6rem .9rem; border:1px solid #111827; border-radius:8px; background:#111827; color:#fff; cursor:pointer; }
